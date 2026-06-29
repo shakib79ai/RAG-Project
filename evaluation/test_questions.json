@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is the main purpose of this document?",
+    "ground_truth": "Replace this with the real ground-truth answer based on your PDF content."
+  },
+  {
+    "question": "Replace this with a real question from your PDF",
+    "ground_truth": "Replace this with the correct answer based on your PDF content"
+  }
+]

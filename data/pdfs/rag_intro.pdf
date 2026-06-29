@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2131 >>
+stream
+BT
+/F1 11 Tf
+72 750 Td
+(Introduction to Retrieval-Augmented Generation \(RAG\)) Tj
+72 735 Td
+() Tj
+72 720 Td
+(RAG is a technique that combines retrieval-based and generative AI methods.) Tj
+72 705 Td
+(It first retrieves relevant documents from a knowledge base, then passes) Tj
+72 690 Td
+(them to a large language model \(LLM\) to generate a grounded answer.) Tj
+72 675 Td
+() Tj
+72 660 Td
+(Key Components:) Tj
+72 645 Td
+(1. Document Ingestion: PDFs are split into overlapping text chunks.) Tj
+72 630 Td
+(2. Embedding: Each chunk is encoded as a dense vector using a model) Tj
+72 615 Td
+(   such as BAAI/bge-small-en-v1.5 from sentence-transformers.) Tj
+72 600 Td
+(3. Vector Store: Embeddings are stored in a FAISS or Chroma index) Tj
+72 585 Td
+(   for fast approximate nearest-neighbour search.) Tj
+72 570 Td
+(4. BM25 Sparse Retrieval: Keyword-based retrieval complements dense search.) Tj
+72 555 Td
+(5. Hybrid Retrieval: Dense and sparse scores are combined \(0.6 / 0.4 weights\).) Tj
+72 540 Td
+(6. Cross-Encoder Reranking: A cross-encoder model re-scores the top candidates) Tj
+72 525 Td
+(   and returns only the top-5 most relevant chunks to the LLM.) Tj
+72 510 Td
+(7. LLM Generation: The reranked chunks are injected into the LLM prompt.) Tj
+72 495 Td
+(   The model \(e.g. Mistral-7B-Instruct\) then generates the final answer.) Tj
+72 480 Td
+() Tj
+72 465 Td
+(Advantages of RAG:) Tj
+72 450 Td
+(- Reduces hallucinations by grounding answers in retrieved evidence.) Tj
+72 435 Td
+(- Allows knowledge updates without expensive model retraining.) Tj
+72 420 Td
+(- Source attribution is possible because the retrieved chunks are known.) Tj
+72 405 Td
+() Tj
+72 390 Td
+(Evaluation Metrics:) Tj
+72 375 Td
+(- Faithfulness: Does the answer stay true to the retrieved context?) Tj
+72 360 Td
+(- Answer Relevance: Does the answer address the user question?) Tj
+72 345 Td
+(- Context Recall: Were the most relevant chunks actually retrieved?) Tj
+72 330 Td
+() Tj
+72 315 Td
+(This project uses Hugging Face models exclusively, running the embedding) Tj
+72 300 Td
+(and reranking locally while optionally calling the Inference API for the LLM.) Tj
+ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002424 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2494
+%%EOF
