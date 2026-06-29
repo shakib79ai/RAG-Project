@@ -86,8 +86,8 @@ rag-hf-project/
 ## 🚀 Setup
 
 ```bash
-git clone https://github.com/shakib79ai/RAG-Huggingface-Project.git
-cd RAG-Huggingface-Project
+git clone https://github.com/shakib79ai/RAG-Project.git
+cd RAG-Project
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
